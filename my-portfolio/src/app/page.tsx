@@ -29,6 +29,7 @@ export default function Home() {
         <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginBottom: '16px' }}>
           <a href="https://github.com/SudiptaBaidya" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-primary)', fontWeight: 600 }}>GitHub</a>
           <a href="https://www.linkedin.com/in/sudipta-baidya-216608332/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-primary)', fontWeight: 600 }}>LinkedIn</a>
+          <a href="https://x.com/Sudipta_Imao" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-primary)', fontWeight: 600 }}>X (Twitter)</a>
         </div>
         <p>© {new Date().getFullYear()} Sudipta Baidya. All rights reserved.</p>
         <p style={{ fontSize: '0.8rem', marginTop: '8px', opacity: 0.7 }}>Built with Next.js & Custom CSS</p>
