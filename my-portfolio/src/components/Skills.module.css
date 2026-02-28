@@ -1,0 +1,101 @@
+.skillsSection {
+    background-color: transparent;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.icon {
+    font-size: 2rem;
+    background: var(--background, #fff);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.categoryTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.skillCard {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.skillContainer {
+    display: flex;
+    align-items: center;
+    background-color: rgba(242, 100, 25, 0.05);
+    border: 1px solid rgba(242, 100, 25, 0.1);
+    border-radius: 24px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    /* Remove color to not override svg fill */
+    overflow: hidden;
+    max-width: 40px;
+    /* Collapse down to icon width */
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+}
+
+.skillName {
+    white-space: nowrap;
+    opacity: 0;
+    width: 0;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-left: 0;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    color: var(--text-primary);
+}
+
+.skillContainer:hover {
+    max-width: 200px;
+    /* Expand to fit text */
+    background-color: rgba(242, 100, 25, 0.15);
+    /* Light orange background instead of solid to keep icon colors visible */
+    padding: 8px 16px;
+    box-shadow: 0 4px 12px rgba(242, 100, 25, 0.1);
+}
+
+.skillContainer:hover .skillName {
+    opacity: 1;
+    width: auto;
+    margin-left: 8px;
+    color: var(--accent-orange, #f26419);
+    /* Orange text on hover */
+}

@@ -1,0 +1,126 @@
+.experienceSection {
+    padding: 100px 0;
+    position: relative;
+    background-color: transparent;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 2px;
+    background: rgba(242, 100, 25, 0.3);
+    z-index: 0;
+}
+
+.timelineItem {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 30px;
+    margin-left: 60px;
+    z-index: 1;
+}
+
+.timelineDot {
+    position: absolute;
+    left: -48px;
+    top: 30px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--accent-orange);
+    box-shadow: 0 0 0 4px rgba(242, 100, 25, 0.2);
+    z-index: 2;
+}
+
+.timelineContent {
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    gap: 16px;
+}
+
+.header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.header h4 {
+    font-size: 1.1rem;
+    color: var(--accent-blue);
+    font-weight: 600;
+}
+
+.date {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(242, 100, 25, 0.1);
+    color: var(--accent-orange);
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.description {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    font-size: 1.05rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skillTag {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timelineItem {
+        margin-left: 50px;
+        padding: 24px 20px;
+    }
+
+    .timelineDot {
+        left: -38px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .header h3 {
+        font-size: 1.25rem;
+    }
+}

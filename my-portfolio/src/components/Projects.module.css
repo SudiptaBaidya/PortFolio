@@ -1,0 +1,146 @@
+.projectsSection {
+    background-color: transparent;
+    position: relative;
+    padding-top: 4rem;
+}
+
+/* Background gradient blur */
+.projectsSection::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(33, 37, 41, 0.05) 0%, transparent 60%);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+    margin-top: 2rem;
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+    overflow: hidden;
+}
+
+.projectImage {
+    transition: transform 0.5s ease;
+}
+
+.projectCard:hover .projectImage {
+    transform: scale(1.05);
+}
+
+.imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.projectCard:hover .imageOverlay {
+    opacity: 1;
+}
+
+.projectLinks {
+    display: flex;
+    gap: 1rem;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.projectCard:hover .projectLinks {
+    transform: translateY(0);
+}
+
+.linkBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    transition: background 0.2s, transform 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.linkBtn:hover {
+    background: var(--primary-color, rgba(242, 100, 25, 0.8));
+    transform: scale(1.1);
+}
+
+.projectContent {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.projectContent h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.projectContent p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.techTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.techTag {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.85rem;
+    border-radius: 20px;
+    background: rgba(242, 100, 25, 0.1);
+    color: var(--primary-color, #f26419);
+    border: 1px solid rgba(242, 100, 25, 0.2);
+    font-weight: 500;
+}
