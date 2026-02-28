@@ -51,7 +51,7 @@ export default function Contact() {
                         </div>
 
                         <form action="https://api.web3forms.com/submit" method="POST" className={styles.contactForm}>
-                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                            <input type="hidden" name="access_key" value="5bcf9159-cb53-4ff7-9570-3f3846292bd2" />
 
                             <div className={styles.formGroup}>
                                 <label htmlFor="name" className={styles.label}>Name</label>
