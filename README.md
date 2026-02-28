@@ -2,7 +2,7 @@
 
 Welcome to the source code for my personal portfolio! This is a modern, responsive web application designed to showcase my skills, experience, and projects as a Full-Stack developer currently seeking internship and freelance opportunities.
 
-![Portfolio Preview](./my-portfolio/public/cineverse-screenshot.png)
+![Portfolio Preview](./my-portfolio/public/portfolio-preview.png)
 
 ## 🚀 Key Features
 
