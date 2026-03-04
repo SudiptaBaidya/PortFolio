@@ -19,22 +19,7 @@
   --transition-normal: all 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-gradient-start: #121212;
-    --bg-gradient-end: #1e1e1e;
 
-    --text-primary: #f8f9fa;
-    --text-secondary: #ced4da;
-    --text-light: #adb5bd;
-
-    --card-bg: rgba(30, 30, 30, 0.6);
-    --glass-border: rgba(255, 255, 255, 0.05);
-
-    --shadow-soft: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    --shadow-hover: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
-  }
-}
 
 html,
 body {
