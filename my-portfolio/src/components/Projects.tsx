@@ -4,6 +4,15 @@ import styles from './Projects.module.css';
 const projects = [
     {
         id: 1,
+        title: 'MedAI',
+        description: 'A web-based AI Health Information Assistant designed to simplify access to trustworthy medical information. The platform helps users explore medicines, understand possible conditions based on symptoms, and maintain a personal health interaction history — all within a secure, conversational interface.',
+        image: '/medai-screenshot.png',
+        tags: ['React', 'TypeScript', 'Vite', 'Node.js', 'Express', 'MongoDB', 'OpenAI API', 'Firebase Auth'],
+        liveLink: 'https://med-ai-rho-eight.vercel.app/',
+        githubLink: 'https://github.com/SudiptaBaidya/MedAi'
+    },
+    {
+        id: 2,
         title: 'CineVerse',
         description: 'A comprehensive movie platform providing the latest movie information. Built with the MERN stack with complete API integration and secure Google authentication.',
         image: '/cineverse-screenshot.png',
